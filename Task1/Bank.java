@@ -1,10 +1,10 @@
 package Task1;
 
+import Task2.Currency;
+
 /**
  * Created by Guillaume Gingembre on 15/02/2017.
  */
-
-import java.util.Currency;
 
 public abstract class Bank {
     //declare fields
