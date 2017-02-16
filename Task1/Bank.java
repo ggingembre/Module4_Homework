@@ -40,6 +40,21 @@ public abstract class Bank {
            return numberOfEmployees * avrSalaryOfEmployee;
             }
 
+
+    // Print method
+
+    @Override
+    public String toString() {
+        return "The bank ID is: " + id + ";\n" +
+        "The bank country is: " + bankCountry + ";\n" +
+        "The bank reporting currency is: " + currency + ";\n" +
+        "The bank employs " + numberOfEmployees + " people;\n" +
+        "The average salary of the employees is:" + avrSalaryOfEmployee + ";\n" +
+        "The bank's rating is:" + rating + " ;\n" +
+        "The bank's total capital is:" + totalCapital + " ;\n";
+    }
+
+
     // declare get and set methods
 
     public long getId() {
