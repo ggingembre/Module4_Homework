@@ -30,10 +30,10 @@ public abstract class Bank {
     }
 
     //declare abstract methods
-    abstract int getLimitOfWithdrawal();
-    abstract int getLimitOfFunding();
-    abstract int getMonthlyRate();
-    abstract int getCommission(int summ);
+    abstract double getLimitOfWithdrawal(); // double as value can be above 127
+    abstract double getLimitOfFunding(); // double as value can be above 127
+    abstract double getMonthlyRate(); // double as value can be decimal
+    abstract double getCommission(double summ); // double as value can be decimal
 
     // declare non abstract methods
     double moneyPaidMonthlyForSalary(){
@@ -54,8 +54,7 @@ public abstract class Bank {
         "The bank's total capital is:" + totalCapital + " ;\n";
     }
 
-
-    // declare get and set methods
+// declare get and set methods
 
     public long getId() {
         return id;

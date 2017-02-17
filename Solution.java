@@ -3,6 +3,7 @@ import Task1.ChinaBank;
 import Task1.EUBank;
 import Task1.USBank;
 import Task2.Currency;
+import Task3.User;
 
 /**
  * Created by Guillaume Gingembre on 17/02/2017.
@@ -25,12 +26,14 @@ public class Solution {
         EUBank EBank = new EUBank(1234567, "France", Currency.EUR, 90, 12500,
                 222222222,10000000);
 
+        User Guillaume = new User(111,"Guillaume",10000,20,"GoIT",1000, EBank);
+
+
         System.out.println(CBank);
         System.out.println(UBank);
         System.out.println(EBank);
+        System.out.println(Guillaume);
 
     }
-
-
 }
 
