@@ -1,9 +1,9 @@
-import Task1.Bank;
 import Task1.ChinaBank;
 import Task1.EUBank;
 import Task1.USBank;
 import Task2.Currency;
 import Task3.User;
+import Task4and5.BankSystemImpl;
 
 /**
  * Created by Guillaume Gingembre on 17/02/2017.
@@ -33,6 +33,11 @@ public class Solution {
         System.out.println(UBank);
         System.out.println(EBank);
         System.out.println(Guillaume);
+
+        BankSystemImpl TestBankSystem = new BankSystemImpl();
+
+        TestBankSystem.someAbstractMethod1();
+        TestBankSystem.someAbstractMethod2();
 
     }
 }
