@@ -30,10 +30,10 @@ public abstract class Bank {
     }
 
     //declare abstract methods
-    abstract double getLimitOfWithdrawal(); // double as value can be above 127
-    abstract double getLimitOfFunding(); // double as value can be above 127
-    abstract double getMonthlyRate(); // double as value can be decimal
-    abstract double getCommission(double summ); // double as value can be decimal
+    public abstract double getLimitOfWithdrawal(); // double as value can be above 127
+    public abstract double getLimitOfFunding(); // double as value can be above 127
+    public abstract double getMonthlyRate(); // double as value can be decimal
+    public abstract double getCommission(double summ); // double as value can be decimal
 
     // declare non abstract methods
     double moneyPaidMonthlyForSalary(){
