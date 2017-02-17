@@ -5,6 +5,8 @@ import Task1.EUBank;
 import Task1.USBank;
 import Task2.Currency;
 import Task3.User;
+import Task4and5.BankSystem;
+import Task4and5.BankSystemImpl;
 
 /**
  * Created by Guillaume Gingembre on 17/02/2017.
@@ -50,6 +52,8 @@ public class Main {
         User Ying = new User(301,"Ying",100,20,"Apple",100, CBankUSD);
         User Yang = new User(302,"Yang",200,15,"Happiness Co",50, CBankEUR);
 
+
+        // printing output for task 5
         System.out.println("The banks are: ");
         System.out.println(EBankEUR);
         System.out.println(EBankUSD);
@@ -65,6 +69,48 @@ public class Main {
         System.out.println(Jane);
         System.out.println(Ying);
         System.out.println(Yang);
+
+        // task 6 : 4 operations per user
+        /**
+        void withdrawOfUser(User user, double amount);
+        void fundUser(User user, double amount);
+        void transferMoney(User fromUser, User toUser, double amount);
+        void paySalary(User user);
+        */
+
+        // declare framework from which you can call the interface methods
+        BankSystemImpl myWorld = new BankSystemImpl();
+
+        myWorld.withdrawOfUser(Igor,1000);
+        myWorld.fundUser(Igor,500);
+        myWorld.transferMoney(Igor, Anna, 100);
+        myWorld.paySalary(Igor);
+
+        myWorld.withdrawOfUser(Anna,100);
+        myWorld.fundUser(Anna,1000);
+        myWorld.transferMoney(Anna, Yang, 100000);
+        myWorld.paySalary(Anna);
+
+        myWorld.withdrawOfUser(Joe,2000);
+        myWorld.fundUser(Joe,10000);
+        myWorld.transferMoney(Joe, Jane, 1000);
+        myWorld.paySalary(Joe);
+
+        myWorld.withdrawOfUser(Jane,100000000);
+        myWorld.fundUser(Jane,1000);
+        myWorld.transferMoney(Jane, Anna, 1000);
+        myWorld.paySalary(Jane);
+
+        myWorld.withdrawOfUser(Ying,1000);
+        myWorld.fundUser(Ying,500);
+        myWorld.transferMoney(Ying, Anna, 10);
+        myWorld.paySalary(Ying);
+
+        myWorld.withdrawOfUser(Yang,100);
+        myWorld.fundUser(Yang,5);
+        myWorld.transferMoney(Yang, Ying, 90);
+        myWorld.paySalary(Yang);
+
     }
 
 }
