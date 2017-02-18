@@ -84,7 +84,7 @@ public class USBank extends Bank {
                 l = commHighEUR;
             }
         }
-        return l;
+        return l * summ;
     }
 
 }

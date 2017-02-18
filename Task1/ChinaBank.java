@@ -86,7 +86,7 @@ public class ChinaBank extends Bank {
                 l = commHighEUR;
             }
         }
-        return l;
+        return l * summ;
     }
 
 
