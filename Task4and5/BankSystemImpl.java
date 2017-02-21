@@ -9,17 +9,18 @@ import Task3.User;
 public class BankSystemImpl implements BankSystem {
 
     // task 4.4
-
+    @Override
     public void someAbstractMethod1() {
         System.out.println("hello I am the implementation of abstract method 1. I belong to " + getClass().getSimpleName());
     }
 
+    @Override
     public void someAbstractMethod2() {
         System.out.println("hello I am the implementation of abstract method 2. I belong to " + getClass().getSimpleName());
     }
 
     // task 4.5
-
+    @Override
     public void withdrawOfUser(User user, double amount){
         double balance, w;
         Bank bank;
@@ -46,6 +47,7 @@ public class BankSystemImpl implements BankSystem {
 
     }
 
+    @Override
     public void fundUser(User user, double amount){
         double balance, w;
         Bank bank;
@@ -70,6 +72,7 @@ public class BankSystemImpl implements BankSystem {
 
     }
 
+    @Override
     public void transferMoney(User fromUser, User toUser, double amount){
         double balanceFrom, balanceTo, wFrom, wTo;
         Bank bankFrom, bankTo;
@@ -108,6 +111,7 @@ public class BankSystemImpl implements BankSystem {
         }
     }
 
+    @Override
     public void paySalary(User user){
 
         // credit salary to account

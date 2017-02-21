@@ -34,6 +34,7 @@ public class EUBank extends Bank {
 
     // declare these methods to implement them, but I do not know yet what they will do
 
+    @Override
     public double getLimitOfWithdrawal() {
         double l = 0;
 
@@ -45,6 +46,7 @@ public class EUBank extends Bank {
         return l;
     }
 
+    @Override
     public double getLimitOfFunding() {
         double l = 0;
 
@@ -56,6 +58,7 @@ public class EUBank extends Bank {
         return l;
     }
 
+    @Override
     public double getMonthlyRate() {
         double l = 0;
 
@@ -67,6 +70,7 @@ public class EUBank extends Bank {
         return l;
     }
 
+    @Override
     public double getCommission (double summ) {
         double l = 0;
 
